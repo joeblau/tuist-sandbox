@@ -3,27 +3,215 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ED7104EA2597A91800D66192 /* TuistSandboxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7104E92597A91800D66192 /* TuistSandboxApp.swift */; };
-		ED7104EC2597A91800D66192 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7104EB2597A91800D66192 /* ContentView.swift */; };
-		ED7104EE2597A91900D66192 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED7104ED2597A91900D66192 /* Assets.xcassets */; };
-		ED7104F12597A91900D66192 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED7104F02597A91900D66192 /* Preview Assets.xcassets */; };
+		04FD5E6CAFD2525AE6B0591A /* Bundle+TuistSandboxWatchKitExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE70C1DC7B46CC10FB8F0D43 /* Bundle+TuistSandboxWatchKitExtension.swift */; };
+		0F80AF0D69F99CAEAEB2B743 /* Shared_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A38FBE2DE4F9C32DE0DE14CB /* Shared_iOS.framework */; };
+		14FC10CAE3E9C5BD35BE36B8 /* SharedStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1735AA22CDE9BA1519DDBA /* SharedStruct.swift */; };
+		2221ABB45F95A096EA175FA5 /* Strings+SharedIOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D23E638FFB19DD600268A7 /* Strings+SharedIOS.swift */; };
+		22411254F96F8E21367A710B /* Assets+TuistSandboxWatchKitExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF23EE37E87DCC01120C60D /* Assets+TuistSandboxWatchKitExtension.swift */; };
+		23DF649F376CE0D4DD3F57F1 /* TuistSandboxWatchKitExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C72813CF85EB5BEC1604184D /* TuistSandboxWatchKitExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		25495DF86DA9CAFA1B0F1690 /* TuistSandboxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB35E4B483D61E08431A657 /* TuistSandboxApp.swift */; };
+		2B25DA6054763A551EB02BEA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572D52FA8B1A1F847D3350DB /* ContentView.swift */; };
+		2E470AD8F60442DDC97E9DA8 /* Assets+TuistSandbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = B239F6353AD4E262268D4C76 /* Assets+TuistSandbox.swift */; };
+		3344090A7A419DE50B35124E /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 0D59B1F3079C1333B4DB55E7 /* ComposableArchitecture */; };
+		505267E397FCA9A922F1D71A /* TuistSandboxWatchKitApp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F3748A29EFC2B10AC2C9C791 /* TuistSandboxWatchKitApp.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		58C3C3460A84B85BD475095F /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E25F1A91000D01EF78C5281 /* NotificationView.swift */; };
+		606E2BE4B4BCFFABE65B5D37 /* TuistSandboxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED222F48D2F83519ABAA573 /* TuistSandboxApp.swift */; };
+		6AA21A65BA8EC8A3239B999B /* SharedStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1735AA22CDE9BA1519DDBA /* SharedStruct.swift */; };
+		75CC27FF706D26C718344BB8 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 4E06633F95940759B08AFC6B /* ComposableArchitecture */; };
+		7AE8EB370E684EA075E977C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4C2192519B82A6BEF69D2AB /* Assets.xcassets */; };
+		84BB216FCA238BA94ACEFAA3 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C79CBA1047201BF8A757B9 /* ComplicationController.swift */; };
+		92374DEA1583DE869FC793C5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1969FDEDAB9C888D7FAECDAD /* Localizable.strings */; };
+		9308F81D3FB1E455A553CCD4 /* Strings+SharedWatchOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716DA6451C9EE722A6A81144 /* Strings+SharedWatchOS.swift */; };
+		9C1A8FCC69AD4CC663C157F7 /* Shared_watchOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E238C06681F4293D481D6E7B /* Shared_watchOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A3EE45255100C1C23E44F49B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65E21B62645A47971EC9732 /* ContentView.swift */; };
+		A624220DD168705B5B300CF1 /* Bundle+Shared_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B2224B9AD67FEB6065F976 /* Bundle+Shared_iOS.swift */; };
+		AAFFCC245694E7F695896157 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE0DA57016F079A515F30F86 /* Assets.xcassets */; };
+		B00CCD461C1B24C3538AAC5E /* Shared_watchOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E238C06681F4293D481D6E7B /* Shared_watchOS.framework */; };
+		D30978309115DDC7D838411C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0480E4239D366FC146F14201 /* Assets.xcassets */; };
+		E7D2076E7D49C0E805055E50 /* Shared_iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A38FBE2DE4F9C32DE0DE14CB /* Shared_iOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EDCE9751EB9E47E0C0D2CB4F /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695C796E588C7C686B05FD58 /* NotificationController.swift */; };
+		F62691CA04A312BC209CB94C /* Bundle+Shared_watchOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCA499FA07D11EF8614ED5F /* Bundle+Shared_watchOS.swift */; };
+		FB2BF6259EA6C503FB2EFE5F /* Bundle+TuistSandbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDB977DF2CE016E9E050E3E /* Bundle+TuistSandbox.swift */; };
+		FC36325EABAE6CCD67BBBD7E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1969FDEDAB9C888D7FAECDAD /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2DA2982C55F1FC47C417A1C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC125E284FCEC475B6E6A066 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D37C2DB3A27BADBA4F9B61F6;
+			remoteInfo = TuistSandboxWatchKitApp;
+		};
+		9A85D6502A322F09867B727A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC125E284FCEC475B6E6A066 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64F121F5B39A63740BFC37E4;
+			remoteInfo = Shared_watchOS;
+		};
+		A9130F082F0193128AE62605 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC125E284FCEC475B6E6A066 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4349F5A2B2BBF534D7AC709;
+			remoteInfo = TuistSandboxWatchKitExtension;
+		};
+		C024FFF4F397EB7F7DDE7044 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC125E284FCEC475B6E6A066 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3EC5E5356B13A2C3D3957E8;
+			remoteInfo = Shared_iOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		130FA76A3D0E5F9C9D1C8BFE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E7D2076E7D49C0E805055E50 /* Shared_iOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DAA7B1852A557582EA2AC6F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9C1A8FCC69AD4CC663C157F7 /* Shared_watchOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44EB3BB9B614B8211447426F /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				505267E397FCA9A922F1D71A /* TuistSandboxWatchKitApp.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EED228A298AE0E7CBBAAA08 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B63C6EC0496AA7CF287625B1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstSubfolderSpec = 13;
+			files = (
+				23DF649F376CE0D4DD3F57F1 /* TuistSandboxWatchKitExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB62D02C25742195D3FAF6B5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F02918A9DD6CF530C37A96DA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		ED7104E62597A91800D66192 /* TuistSandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuistSandbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED7104E92597A91800D66192 /* TuistSandboxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuistSandboxApp.swift; sourceTree = "<group>"; };
-		ED7104EB2597A91800D66192 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		ED7104ED2597A91900D66192 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		ED7104F02597A91900D66192 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		ED7104F22597A91900D66192 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0480E4239D366FC146F14201 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		126A22B610E9F2B0EDE19940 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1969FDEDAB9C888D7FAECDAD /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		1BCA499FA07D11EF8614ED5F /* Bundle+Shared_watchOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Shared_watchOS.swift"; sourceTree = "<group>"; };
+		1DF23EE37E87DCC01120C60D /* Assets+TuistSandboxWatchKitExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Assets+TuistSandboxWatchKitExtension.swift"; sourceTree = "<group>"; };
+		2728789C7ECC5B6E6EEC34B2 /* TuistSandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuistSandbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E25F1A91000D01EF78C5281 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		3F1735AA22CDE9BA1519DDBA /* SharedStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedStruct.swift; sourceTree = "<group>"; };
+		572D52FA8B1A1F847D3350DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		695C796E588C7C686B05FD58 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		6CC59CED37F95585FE23AF9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		716DA6451C9EE722A6A81144 /* Strings+SharedWatchOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Strings+SharedWatchOS.swift"; sourceTree = "<group>"; };
+		74D23E638FFB19DD600268A7 /* Strings+SharedIOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Strings+SharedIOS.swift"; sourceTree = "<group>"; };
+		77B2224B9AD67FEB6065F976 /* Bundle+Shared_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Shared_iOS.swift"; sourceTree = "<group>"; };
+		A21CDFC4C22831BA9ED8E221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A38FBE2DE4F9C32DE0DE14CB /* Shared_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Shared_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A65E21B62645A47971EC9732 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B0C79CBA1047201BF8A757B9 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		B239F6353AD4E262268D4C76 /* Assets+TuistSandbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Assets+TuistSandbox.swift"; sourceTree = "<group>"; };
+		BE0DA57016F079A515F30F86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C72813CF85EB5BEC1604184D /* TuistSandboxWatchKitExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TuistSandboxWatchKitExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE0803FB7B1DD22E816F0CB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DCDB977DF2CE016E9E050E3E /* Bundle+TuistSandbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+TuistSandbox.swift"; sourceTree = "<group>"; };
+		E238C06681F4293D481D6E7B /* Shared_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Shared_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE70C1DC7B46CC10FB8F0D43 /* Bundle+TuistSandboxWatchKitExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+TuistSandboxWatchKitExtension.swift"; sourceTree = "<group>"; };
+		F3748A29EFC2B10AC2C9C791 /* TuistSandboxWatchKitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuistSandboxWatchKitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4C2192519B82A6BEF69D2AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FEB35E4B483D61E08431A657 /* TuistSandboxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuistSandboxApp.swift; sourceTree = "<group>"; };
+		FED222F48D2F83519ABAA573 /* TuistSandboxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuistSandboxApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		ED7104E32597A91800D66192 /* Frameworks */ = {
+		1FDB9179B51D6EF947DC2500 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F80AF0D69F99CAEAEB2B743 /* Shared_iOS.framework in Frameworks */,
+				75CC27FF706D26C718344BB8 /* ComposableArchitecture in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		611474D9CC89D62F09BC4A40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76CBCA84F8B0AAC742A4998A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0C156F5C9FA8A14D2ABBC43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B00CCD461C1B24C3538AAC5E /* Shared_watchOS.framework in Frameworks */,
+				3344090A7A419DE50B35124E /* ComposableArchitecture in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1B3627DF5A394A65123678B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,120 +221,674 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		ED7104DD2597A91800D66192 = {
+		0869AC5BE9712717D8CF0002 /* Derived */ = {
 			isa = PBXGroup;
 			children = (
-				ED7104E82597A91800D66192 /* TuistSandbox */,
-				ED7104E72597A91800D66192 /* Products */,
+				1643037D61FBB2B81BFF1DC7 /* Sources */,
 			);
+			path = Derived;
 			sourceTree = "<group>";
 		};
-		ED7104E72597A91800D66192 /* Products */ = {
+		0CB3669C0C80863A7FCDBD27 /* Project */ = {
 			isa = PBXGroup;
 			children = (
-				ED7104E62597A91800D66192 /* TuistSandbox.app */,
+				5E7BC4A23501F63134D15B0F /* Apps */,
+				0869AC5BE9712717D8CF0002 /* Derived */,
+				6B5ED97AE2DB9F493A71A181 /* Libraries */,
+			);
+			name = Project;
+			sourceTree = "<group>";
+		};
+		1643037D61FBB2B81BFF1DC7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				B239F6353AD4E262268D4C76 /* Assets+TuistSandbox.swift */,
+				1DF23EE37E87DCC01120C60D /* Assets+TuistSandboxWatchKitExtension.swift */,
+				77B2224B9AD67FEB6065F976 /* Bundle+Shared_iOS.swift */,
+				1BCA499FA07D11EF8614ED5F /* Bundle+Shared_watchOS.swift */,
+				DCDB977DF2CE016E9E050E3E /* Bundle+TuistSandbox.swift */,
+				EE70C1DC7B46CC10FB8F0D43 /* Bundle+TuistSandboxWatchKitExtension.swift */,
+				74D23E638FFB19DD600268A7 /* Strings+SharedIOS.swift */,
+				716DA6451C9EE722A6A81144 /* Strings+SharedWatchOS.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		36B3575239A8A379F35B60A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		434DD008A553F3B3F522F5A3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0480E4239D366FC146F14201 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		44A231E868E1BBFEE69C7382 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BE0DA57016F079A515F30F86 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		44BE81761B5A47A3510E9A04 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				A21CDFC4C22831BA9ED8E221 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		49009A334FF75F30360FA775 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1969FDEDAB9C888D7FAECDAD /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5A76D36A8428198225D39D5E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A38FBE2DE4F9C32DE0DE14CB /* Shared_iOS.framework */,
+				E238C06681F4293D481D6E7B /* Shared_watchOS.framework */,
+				2728789C7ECC5B6E6EEC34B2 /* TuistSandbox.app */,
+				F3748A29EFC2B10AC2C9C791 /* TuistSandboxWatchKitApp.app */,
+				C72813CF85EB5BEC1604184D /* TuistSandboxWatchKitExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		ED7104E82597A91800D66192 /* TuistSandbox */ = {
+		5E7BC4A23501F63134D15B0F /* Apps */ = {
 			isa = PBXGroup;
 			children = (
-				ED7104E92597A91800D66192 /* TuistSandboxApp.swift */,
-				ED7104EB2597A91800D66192 /* ContentView.swift */,
-				ED7104ED2597A91900D66192 /* Assets.xcassets */,
-				ED7104F22597A91900D66192 /* Info.plist */,
-				ED7104EF2597A91900D66192 /* Preview Content */,
+				F721552F2C9AEB8FF6722F01 /* TuistSandbox */,
+				E8CE5901010C0812139EE4B0 /* TuistSandboxWatchKitApp */,
+				B0E21F72E7A412E069CFF063 /* TuistSandboxWatchKitExtension */,
+			);
+			path = Apps;
+			sourceTree = "<group>";
+		};
+		6900A9B1A2A96DBA433F77D6 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				49009A334FF75F30360FA775 /* Resources */,
+				6D4420119646F96B12E0C48D /* Sources */,
+				A32FC6BB32CCE808585BF678 /* SupportingFiles */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		6B5ED97AE2DB9F493A71A181 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				6900A9B1A2A96DBA433F77D6 /* Shared */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		6D4420119646F96B12E0C48D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				3F1735AA22CDE9BA1519DDBA /* SharedStruct.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		9FC8B7357BCEB983F8D2D127 = {
+			isa = PBXGroup;
+			children = (
+				0CB3669C0C80863A7FCDBD27 /* Project */,
+				36B3575239A8A379F35B60A5 /* Frameworks */,
+				5A76D36A8428198225D39D5E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A32FC6BB32CCE808585BF678 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				6CC59CED37F95585FE23AF9D /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		B0E21F72E7A412E069CFF063 /* TuistSandboxWatchKitExtension */ = {
+			isa = PBXGroup;
+			children = (
+				434DD008A553F3B3F522F5A3 /* Resources */,
+				F10033AF8942E04440650A05 /* Sources */,
+				CA1CE320D239F4E305B71B03 /* SupportingFiles */,
+			);
+			path = TuistSandboxWatchKitExtension;
+			sourceTree = "<group>";
+		};
+		BD150E10276903C6E1F3F0D8 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				126A22B610E9F2B0EDE19940 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		CA1CE320D239F4E305B71B03 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				CE0803FB7B1DD22E816F0CB3 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		E8CE5901010C0812139EE4B0 /* TuistSandboxWatchKitApp */ = {
+			isa = PBXGroup;
+			children = (
+				FE88F024C6492934545B5683 /* Resources */,
+				44BE81761B5A47A3510E9A04 /* SupportingFiles */,
+			);
+			path = TuistSandboxWatchKitApp;
+			sourceTree = "<group>";
+		};
+		F10033AF8942E04440650A05 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				B0C79CBA1047201BF8A757B9 /* ComplicationController.swift */,
+				572D52FA8B1A1F847D3350DB /* ContentView.swift */,
+				695C796E588C7C686B05FD58 /* NotificationController.swift */,
+				2E25F1A91000D01EF78C5281 /* NotificationView.swift */,
+				FEB35E4B483D61E08431A657 /* TuistSandboxApp.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		F721552F2C9AEB8FF6722F01 /* TuistSandbox */ = {
+			isa = PBXGroup;
+			children = (
+				44A231E868E1BBFEE69C7382 /* Resources */,
+				F7DAE8F1621C3421650BEDE1 /* Sources */,
+				BD150E10276903C6E1F3F0D8 /* SupportingFiles */,
 			);
 			path = TuistSandbox;
 			sourceTree = "<group>";
 		};
-		ED7104EF2597A91900D66192 /* Preview Content */ = {
+		F7DAE8F1621C3421650BEDE1 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				ED7104F02597A91900D66192 /* Preview Assets.xcassets */,
+				A65E21B62645A47971EC9732 /* ContentView.swift */,
+				FED222F48D2F83519ABAA573 /* TuistSandboxApp.swift */,
 			);
-			path = "Preview Content";
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		FE88F024C6492934545B5683 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F4C2192519B82A6BEF69D2AB /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		ED7104E52597A91800D66192 /* TuistSandbox */ = {
+		53CE00AC1AF74E78A5F6B076 /* TuistSandbox */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ED7104F52597A91900D66192 /* Build configuration list for PBXNativeTarget "TuistSandbox" */;
+			buildConfigurationList = 86379114546BD8ACEA59F6C2 /* Build configuration list for PBXNativeTarget "TuistSandbox" */;
 			buildPhases = (
-				ED7104E22597A91800D66192 /* Sources */,
-				ED7104E32597A91800D66192 /* Frameworks */,
-				ED7104E42597A91800D66192 /* Resources */,
+				9B41836FA9437A741013BEC9 /* Sources */,
+				9B6F51492940B60D69D5E6F3 /* Resources */,
+				44EB3BB9B614B8211447426F /* Embed Watch Content */,
+				E097E744A10AC37F71ECA9F9 /* Embed Precompiled Frameworks */,
+				130FA76A3D0E5F9C9D1C8BFE /* Embed Frameworks */,
+				1FDB9179B51D6EF947DC2500 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD3671B93B68A9DCFFBCEA1A /* PBXTargetDependency */,
+				4C6D0A893A7F400F1363235C /* PBXTargetDependency */,
+			);
+			name = TuistSandbox;
+			packageProductDependencies = (
+				4E06633F95940759B08AFC6B /* ComposableArchitecture */,
+			);
+			productName = TuistSandbox;
+			productReference = 2728789C7ECC5B6E6EEC34B2 /* TuistSandbox.app */;
+			productType = "com.apple.product-type.application";
+		};
+		64F121F5B39A63740BFC37E4 /* Shared_watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A02F41CAA90D2B188D6739D /* Build configuration list for PBXNativeTarget "Shared_watchOS" */;
+			buildPhases = (
+				7F6D40109923502B37D54827 /* Sources */,
+				DA1B39D0FDA52C55F4481C26 /* Resources */,
+				9964F21371B2122058D75AF1 /* Embed Precompiled Frameworks */,
+				F02918A9DD6CF530C37A96DA /* Embed Frameworks */,
+				611474D9CC89D62F09BC4A40 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = TuistSandbox;
-			productName = TuistSandbox;
-			productReference = ED7104E62597A91800D66192 /* TuistSandbox.app */;
-			productType = "com.apple.product-type.application";
+			name = Shared_watchOS;
+			productName = Shared_watchOS;
+			productReference = E238C06681F4293D481D6E7B /* Shared_watchOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B4349F5A2B2BBF534D7AC709 /* TuistSandboxWatchKitExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BE5E1DC7E83901F30E8A62C /* Build configuration list for PBXNativeTarget "TuistSandboxWatchKitExtension" */;
+			buildPhases = (
+				A004F8C9377D57CB873DEE1B /* Sources */,
+				FEC977CA842DDD8C3F73B16A /* Resources */,
+				B639D0A1EAC9E81D03C4831A /* Embed Precompiled Frameworks */,
+				1DAA7B1852A557582EA2AC6F /* Embed Frameworks */,
+				E0C156F5C9FA8A14D2ABBC43 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B86AE01C5B0F363FDAAFA94 /* PBXTargetDependency */,
+			);
+			name = TuistSandboxWatchKitExtension;
+			packageProductDependencies = (
+				0D59B1F3079C1333B4DB55E7 /* ComposableArchitecture */,
+			);
+			productName = TuistSandboxWatchKitExtension;
+			productReference = C72813CF85EB5BEC1604184D /* TuistSandboxWatchKitExtension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		D37C2DB3A27BADBA4F9B61F6 /* TuistSandboxWatchKitApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57D19CB06BF6A6DCF740BBB2 /* Build configuration list for PBXNativeTarget "TuistSandboxWatchKitApp" */;
+			buildPhases = (
+				F7748CAC0B73DB00B3709BF1 /* Sources */,
+				F531D45A8F44C1F1779DC7A5 /* Resources */,
+				B63C6EC0496AA7CF287625B1 /* Embed App Extensions */,
+				6FFA9E86B08109B1428775BC /* Embed Precompiled Frameworks */,
+				CB62D02C25742195D3FAF6B5 /* Embed Frameworks */,
+				F1B3627DF5A394A65123678B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63A97A2170CEDCAE6CCC81A2 /* PBXTargetDependency */,
+			);
+			name = TuistSandboxWatchKitApp;
+			productName = TuistSandboxWatchKitApp;
+			productReference = F3748A29EFC2B10AC2C9C791 /* TuistSandboxWatchKitApp.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		D3EC5E5356B13A2C3D3957E8 /* Shared_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DE23E9B8F407A086E7DEDF9 /* Build configuration list for PBXNativeTarget "Shared_iOS" */;
+			buildPhases = (
+				FF5EE6A21316F8A1E0AC1294 /* Sources */,
+				D6782B23A78B1E7752FAA70E /* Resources */,
+				573939E41E9FEDB5EFEBACC7 /* Embed Precompiled Frameworks */,
+				7EED228A298AE0E7CBBAAA08 /* Embed Frameworks */,
+				76CBCA84F8B0AAC742A4998A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Shared_iOS;
+			productName = Shared_iOS;
+			productReference = A38FBE2DE4F9C32DE0DE14CB /* Shared_iOS.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		ED7104DE2597A91800D66192 /* Project object */ = {
+		EC125E284FCEC475B6E6A066 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1230;
-				LastUpgradeCheck = 1230;
-				TargetAttributes = {
-					ED7104E52597A91800D66192 = {
-						CreatedOnToolsVersion = 12.3;
-					};
-				};
+				ORGANIZATIONNAME = Sandbox;
 			};
-			buildConfigurationList = ED7104E12597A91800D66192 /* Build configuration list for PBXProject "TuistSandbox" */;
+			buildConfigurationList = 89788386BCCFED1535CB91D9 /* Build configuration list for PBXProject "TuistSandbox" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
 			);
-			mainGroup = ED7104DD2597A91800D66192;
-			productRefGroup = ED7104E72597A91800D66192 /* Products */;
+			mainGroup = 9FC8B7357BCEB983F8D2D127;
+			packageReferences = (
+				F77D8FA5E4452871A3AF0D10 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
+			productRefGroup = 5A76D36A8428198225D39D5E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ED7104E52597A91800D66192 /* TuistSandbox */,
+				53CE00AC1AF74E78A5F6B076 /* TuistSandbox */,
+				D37C2DB3A27BADBA4F9B61F6 /* TuistSandboxWatchKitApp */,
+				B4349F5A2B2BBF534D7AC709 /* TuistSandboxWatchKitExtension */,
+				D3EC5E5356B13A2C3D3957E8 /* Shared_iOS */,
+				64F121F5B39A63740BFC37E4 /* Shared_watchOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		ED7104E42597A91800D66192 /* Resources */ = {
+		9B6F51492940B60D69D5E6F3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED7104F12597A91900D66192 /* Preview Assets.xcassets in Resources */,
-				ED7104EE2597A91900D66192 /* Assets.xcassets in Resources */,
+				AAFFCC245694E7F695896157 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6782B23A78B1E7752FAA70E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC36325EABAE6CCD67BBBD7E /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA1B39D0FDA52C55F4481C26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92374DEA1583DE869FC793C5 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F531D45A8F44C1F1779DC7A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AE8EB370E684EA075E977C8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEC977CA842DDD8C3F73B16A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D30978309115DDC7D838411C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		573939E41E9FEDB5EFEBACC7 /* Embed Precompiled Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Precompiled Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"Skipping, nothing to be embedded.\"";
+		};
+		6FFA9E86B08109B1428775BC /* Embed Precompiled Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Precompiled Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"Skipping, nothing to be embedded.\"";
+		};
+		9964F21371B2122058D75AF1 /* Embed Precompiled Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Precompiled Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"Skipping, nothing to be embedded.\"";
+		};
+		B639D0A1EAC9E81D03C4831A /* Embed Precompiled Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Precompiled Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"Skipping, nothing to be embedded.\"";
+		};
+		E097E744A10AC37F71ECA9F9 /* Embed Precompiled Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Precompiled Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"Skipping, nothing to be embedded.\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		ED7104E22597A91800D66192 /* Sources */ = {
+		7F6D40109923502B37D54827 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED7104EC2597A91800D66192 /* ContentView.swift in Sources */,
-				ED7104EA2597A91800D66192 /* TuistSandboxApp.swift in Sources */,
+				F62691CA04A312BC209CB94C /* Bundle+Shared_watchOS.swift in Sources */,
+				9308F81D3FB1E455A553CCD4 /* Strings+SharedWatchOS.swift in Sources */,
+				6AA21A65BA8EC8A3239B999B /* SharedStruct.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B41836FA9437A741013BEC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3EE45255100C1C23E44F49B /* ContentView.swift in Sources */,
+				606E2BE4B4BCFFABE65B5D37 /* TuistSandboxApp.swift in Sources */,
+				2E470AD8F60442DDC97E9DA8 /* Assets+TuistSandbox.swift in Sources */,
+				FB2BF6259EA6C503FB2EFE5F /* Bundle+TuistSandbox.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A004F8C9377D57CB873DEE1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84BB216FCA238BA94ACEFAA3 /* ComplicationController.swift in Sources */,
+				2B25DA6054763A551EB02BEA /* ContentView.swift in Sources */,
+				EDCE9751EB9E47E0C0D2CB4F /* NotificationController.swift in Sources */,
+				58C3C3460A84B85BD475095F /* NotificationView.swift in Sources */,
+				25495DF86DA9CAFA1B0F1690 /* TuistSandboxApp.swift in Sources */,
+				22411254F96F8E21367A710B /* Assets+TuistSandboxWatchKitExtension.swift in Sources */,
+				04FD5E6CAFD2525AE6B0591A /* Bundle+TuistSandboxWatchKitExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7748CAC0B73DB00B3709BF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF5EE6A21316F8A1E0AC1294 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A624220DD168705B5B300CF1 /* Bundle+Shared_iOS.swift in Sources */,
+				2221ABB45F95A096EA175FA5 /* Strings+SharedIOS.swift in Sources */,
+				14FC10CAE3E9C5BD35BE36B8 /* SharedStruct.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		0B86AE01C5B0F363FDAAFA94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Shared_watchOS;
+			target = 64F121F5B39A63740BFC37E4 /* Shared_watchOS */;
+			targetProxy = 9A85D6502A322F09867B727A /* PBXContainerItemProxy */;
+		};
+		4C6D0A893A7F400F1363235C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TuistSandboxWatchKitApp;
+			target = D37C2DB3A27BADBA4F9B61F6 /* TuistSandboxWatchKitApp */;
+			targetProxy = 2DA2982C55F1FC47C417A1C4 /* PBXContainerItemProxy */;
+		};
+		63A97A2170CEDCAE6CCC81A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TuistSandboxWatchKitExtension;
+			target = B4349F5A2B2BBF534D7AC709 /* TuistSandboxWatchKitExtension */;
+			targetProxy = A9130F082F0193128AE62605 /* PBXContainerItemProxy */;
+		};
+		AD3671B93B68A9DCFFBCEA1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Shared_iOS;
+			target = D3EC5E5356B13A2C3D3957E8 /* Shared_iOS */;
+			targetProxy = C024FFF4F397EB7F7DDE7044 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		ED7104F32597A91900D66192 /* Debug */ = {
+		482D27081E6F3D3216E3C200 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Apps/TuistSandboxWatchKitExtension/SupportingFiles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.joeblau.TuistSandbox.watchkitapp.extension;
+				PRODUCT_NAME = TuistSandboxWatchKitExtension;
+				SDKROOT = watchos;
+				SUPPORTED_PLATFORMS = "watchsimulator watchos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.3.2;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Debug;
+		};
+		4DA691117E66C62BBCF55A29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_PREVIEWS = YES;
+				IBSC_MODULE = TuistSandboxWatchKitExtension;
+				INFOPLIST_FILE = Apps/TuistSandboxWatchKitApp/SupportingFiles/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joeblau.TuistSandbox.watchkitapp;
+				PRODUCT_NAME = TuistSandboxWatchKitApp;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "watchsimulator watchos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.3.2;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Debug;
+		};
+		58AD540EBA3E470C9D53C288 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Libraries/Shared/SupportingFiles/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.joeblau.Shared;
+				PRODUCT_NAME = Shared_watchOS;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "watchsimulator watchos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.3.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		65C1474727E51C4E846DE446 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Apps/TuistSandboxWatchKitExtension/SupportingFiles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.joeblau.TuistSandbox.watchkitapp.extension;
+				PRODUCT_NAME = TuistSandboxWatchKitExtension;
+				SDKROOT = watchos;
+				SUPPORTED_PLATFORMS = "watchsimulator watchos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.3.2;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
+		885A50759A055B26F92BA07C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_PREVIEWS = YES;
+				IBSC_MODULE = TuistSandboxWatchKitExtension;
+				INFOPLIST_FILE = Apps/TuistSandboxWatchKitApp/SupportingFiles/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joeblau.TuistSandbox.watchkitapp;
+				PRODUCT_NAME = TuistSandboxWatchKitApp;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "watchsimulator watchos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.3.2;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
+		956C4FF48ABF1E2FB696D29F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -172,7 +914,162 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ACE4DD4BB1F0682A90EDF777 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Libraries/Shared/SupportingFiles/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.joeblau.Shared;
+				PRODUCT_NAME = Shared_iOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.3.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BE3AF13C36B13D0D0AA5EE8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Libraries/Shared/SupportingFiles/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.joeblau.Shared;
+				PRODUCT_NAME = Shared_iOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.3.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CEEFD629F5390780150DEBD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Apps/TuistSandbox/SupportingFiles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.joeblau.TuistSandbox;
+				PRODUCT_NAME = TuistSandbox;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.3.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E07E297C13C9DFF05090B5C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Apps/TuistSandbox/SupportingFiles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.joeblau.TuistSandbox;
+				PRODUCT_NAME = TuistSandbox;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.3.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E1B5DE2FB075011F1C667929 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -197,135 +1094,123 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		ED7104F42597A91900D66192 /* Release */ = {
+		FE273A2A44FE2346940D9561 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				SDKROOT = iphoneos;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Libraries/Shared/SupportingFiles/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.joeblau.Shared;
+				PRODUCT_NAME = Shared_watchOS;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "watchsimulator watchos";
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		ED7104F62597A91900D66192 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"TuistSandbox/Preview Content\"";
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = TuistSandbox/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.joeblau.TuistSandbox;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		ED7104F72597A91900D66192 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"TuistSandbox/Preview Content\"";
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = TuistSandbox/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.joeblau.TuistSandbox;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.3.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ED7104E12597A91800D66192 /* Build configuration list for PBXProject "TuistSandbox" */ = {
+		2DE23E9B8F407A086E7DEDF9 /* Build configuration list for PBXNativeTarget "Shared_iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ED7104F32597A91900D66192 /* Debug */,
-				ED7104F42597A91900D66192 /* Release */,
+				ACE4DD4BB1F0682A90EDF777 /* Debug */,
+				BE3AF13C36B13D0D0AA5EE8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ED7104F52597A91900D66192 /* Build configuration list for PBXNativeTarget "TuistSandbox" */ = {
+		4A02F41CAA90D2B188D6739D /* Build configuration list for PBXNativeTarget "Shared_watchOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ED7104F62597A91900D66192 /* Debug */,
-				ED7104F72597A91900D66192 /* Release */,
+				58AD540EBA3E470C9D53C288 /* Debug */,
+				FE273A2A44FE2346940D9561 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57D19CB06BF6A6DCF740BBB2 /* Build configuration list for PBXNativeTarget "TuistSandboxWatchKitApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DA691117E66C62BBCF55A29 /* Debug */,
+				885A50759A055B26F92BA07C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BE5E1DC7E83901F30E8A62C /* Build configuration list for PBXNativeTarget "TuistSandboxWatchKitExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				482D27081E6F3D3216E3C200 /* Debug */,
+				65C1474727E51C4E846DE446 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86379114546BD8ACEA59F6C2 /* Build configuration list for PBXNativeTarget "TuistSandbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEEFD629F5390780150DEBD6 /* Debug */,
+				E07E297C13C9DFF05090B5C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89788386BCCFED1535CB91D9 /* Build configuration list for PBXProject "TuistSandbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1B5DE2FB075011F1C667929 /* Debug */,
+				956C4FF48ABF1E2FB696D29F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F77D8FA5E4452871A3AF0D10 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:pointfreeco/swift-composable-architecture.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0D59B1F3079C1333B4DB55E7 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ComposableArchitecture;
+		};
+		4E06633F95940759B08AFC6B /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = ED7104DE2597A91800D66192 /* Project object */;
+	rootObject = EC125E284FCEC475B6E6A066 /* Project object */;
 }

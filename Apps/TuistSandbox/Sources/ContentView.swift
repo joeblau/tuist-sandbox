@@ -6,10 +6,11 @@
 //
 
 import SwiftUI
+import Shared_iOS
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
+        Text("Hello, world! \(SharedStruct())")
             .padding()
     }
 }
